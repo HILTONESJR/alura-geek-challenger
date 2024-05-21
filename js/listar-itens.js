@@ -1,7 +1,11 @@
 import { conexaoAPI } from "../main.js";
 
-const listProdutos = document.querySelector("[data-lista]");
+const inserItens = document.querySelector("[data-lista]");
 
-fuction exibirNaTela('produtos'){
-    
+fuction exibirNaTela('listaProdutos'){
+    listaProdutos.forEach('produto'){
+        produto.innerHTML = `
+        
+        `
+    }
 }
