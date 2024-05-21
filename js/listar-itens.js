@@ -3,7 +3,7 @@ import { conexaoAPI } from "../main.js";
 const inserItens = document.querySelector("[data-lista]");
 
 fuction exibirNaTela('listaProdutos'){
-    listaProdutos.forEach('produto'){
+    listaProdutos.forEach('produto' => {
         produto.innerHTML = `
                 <div class="produto-item">
                     <img class="imagem-produto" src="${produto.imagem}" alt="">
@@ -13,5 +13,5 @@ fuction exibirNaTela('listaProdutos'){
                     <img class="icone-produto" src="${produto.icon}" alt="icone-lixeira">
                 </div>
         `
-    }
+    })
 }
