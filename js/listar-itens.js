@@ -1,10 +1,10 @@
 import { conexaoAPI } from "../main.js";
 
-const inserItens = document.querySelector("[data-lista]");
+const inserirItens = document.querySelector("[data-lista]");
 
 fuction exibirNaTela('listaProdutos'){
-    listaProdutos.forEach('produto' => {
-        produto.innerHTML = `
+    listaProdutos.forEach(produto => {
+        inserirItens.innerHTML = `
                 <div class="produto-item">
                     <img class="imagem-produto" src="${produto.imagem}" alt="">
                     <h1 class="titulo-produto">${produto.titulo}</h1>
