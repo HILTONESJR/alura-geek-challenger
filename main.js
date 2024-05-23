@@ -30,6 +30,5 @@ function exibirNaTela(ListaProdutos) {
                 <p class="valor-produto">R$ ${produto.valor}</p>
             </div>
         `;
-    });
+    })
 }
-
