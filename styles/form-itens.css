@@ -1,0 +1,35 @@
+.loja-container-form {
+    display: flex;
+    flex-direction: column;
+}
+.loja-form-produtos {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+.itens-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+.itens-container-form h1 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.form-itens-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 30px;
+}
+input {
+    padding: 5px;
+    border-radius: 30px;
+    width: 350px;
+}

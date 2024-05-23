@@ -2,19 +2,31 @@
     "produtos": [
       {
         "id": "1",
-        "titulo": "Xiaomi-Black Shark 3",
-        "descricao": "Smartphone Gamer 4ram QuadCore",
-        "valor": "29,99",
-        "imagem": "https://www.promobit.com.br/blog/wp-content/uploads/2020/08/21165534/Xiaomi-Black-Shark-3.jpg",
-        "icon": "https://cdn-icons-png.flaticon.com/128/8134/8134370.png"
+        "titulo": "BUQUE DE ROSAS 12UN",
+        "descricao": "Buque com 12 rosas vermelhas",
+        "valor": "109,99", 
+        "imagem": "https://static.giulianaflores.com.br/images/product/26951gg.jpg?ims=405x405"
       },
       {
         "id": "2",
-        "titulo": "Xiaomi-Black Shark 3",
-        "descricao": "Smartphone Gamer 4ram QuadCore",
-        "valor": "29,99",
-        "imagem": "https://www.promobit.com.br/blog/wp-content/uploads/2020/08/21165534/Xiaomi-Black-Shark-3.jpg",
-        "icon": "https://cdn-icons-png.flaticon.com/128/8134/8134370.png"
+        "titulo": "BUQUE DE ROSAS 12UN",
+        "descricao": "Buque com 12 rosas vermelhas",
+        "valor": "109,99", 
+        "imagem": "https://static.giulianaflores.com.br/images/product/26951gg.jpg?ims=405x405"
+      },
+      {
+        "id": "2",
+        "titulo": "BUQUE DE ROSAS 12UN",
+        "descricao": "Buque com 12 rosas vermelhas",
+        "valor": "109,99", 
+        "imagem": "https://static.giulianaflores.com.br/images/product/26951gg.jpg?ims=405x405"
+      },
+      {
+        "id": "2",
+        "titulo": "BUQUE DE ROSAS 12UN",
+        "descricao": "Buque com 12 rosas vermelhas",
+        "valor": "109,99", 
+        "imagem": "https://static.giulianaflores.com.br/images/product/26951gg.jpg?ims=405x405"
       }
     ]
   }

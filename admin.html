@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/form-itens.css">
     <title>Alura Geek Challenger</title>
 </head>
 <header>
@@ -21,21 +22,38 @@
         </div>
 </header>
 <body>
-    <main class="loja-container">
+    <main class="loja-container-form">
         <div class="banner-flores">
             <img src="./assets/img/dia-das-maes.png" alt="banner-flores">
         </div>
-        <div class="itens-container">
-            <div class="opcoes-itens">
-                <ul>
-                    <li><a href="">Buques</a></li>
-                    <li><a href="">Cestas</a></li>
-                    <li><a href="">Presentes</a></li>
-                    <li><a href="">Pelucias</a></li>
-                    <li><a href="">Bomboms</a></li>
-                </ul>
-                
-            </div>
+        <section class="loja-form-produtos">
+                <div class="itens-container-form" data-formulario>
+                    <h1>INSERIR PRODUTOS</h1>
+
+                    <div class="form-itens-box">
+                        <label for="">URL Imagem:</label>
+                        <input type="text" id="url-item" data-imagem>
+                    </div>
+
+                    <div class="form-itens-box">
+                        <label for="">Titulo:</label>
+                        <input type="text" id="titulo-item" data-titulo>
+                    </div>
+
+                    <div class="form-itens-box">
+                        <label for="">Valor Poduto:</label>
+                        <input type="text" id="valor-item" data-valor>
+                    </div>
+                    
+                    <div class="form-itens-box">
+                        <label for="">Descrição:</label>
+                        <input type="text" id="descricao-item" data-descricao>
+                    </div>
+                    <div class="form-itens-box">
+                    <input class="formulario__botao" type="submit" />
+                    </div>
+                </div>
+
             <div class="lista-itens" data-lista>
                 <!--<div class="produto-item">
                     <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
@@ -169,8 +187,8 @@
 
 
         </div>
+    </section>
     </main>
     <script type="module" src="./main.js"></script>
-    <script type="module" src="./js/listaProdutos.js"></script>
 </body>
 </html>
