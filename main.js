@@ -1,34 +1,42 @@
-// Conecta com a API recebendo retorno dos dados
-let produtos = [];
+async function listaProdutos() {
+    const conexao = await fetch("http://localhost:3000/produtos");
+    const conexaoConvertida = await conexao.json();
 
-const endpointAPI = 'http://localhost:3000/produtos';
-getProdutosAPI();
-const inserirItens = document.querySelector("[data-lista]");
-
-async function getProdutosAPI() {
-    try {
-        const res = await fetch(endpointAPI);
-        if (!res.ok) {
-            throw new Error(`Erro: ${res.status} ${res.statusText}`);
-        }
-        produtos = await res.json();
-        exibirNaTela(produtos);
-    } catch (error) {
-        console.error("Erro ao buscar produtos:", error);
-    }
+    return conexaoConvertida;
 }
 
-// Insere os itens do array na tela.
-function exibirNaTela(ListaProdutos) {
-    inserirItens.innerHTML = '';
-    ListaProdutos.forEach(produto => {
-        inserirItens.innerHTML += `
-            <div class="produto-item">
-                <img class="imagem-produto" src="${produto.imagem}" alt="${produto.titulo}">
-                <h1 class="titulo-produto">${produto.titulo}</h1>
-                <span class="descricao-produto">${produto.descricao}</span>
-                <p class="valor-produto">R$ ${produto.valor}</p>
-            </div>
-        `;
-    })
+async function criaProduto(imagem, titulo, video, descricao) {
+    const conexao = await fetch("http://localhost:3000/produtos", {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            imagem: imagem,
+            titulo: titulo,
+            valor: valor,
+            descricao: descricao
+        })
+            
+    });
+    if (!conexao.ok) {
+        throw new Error("Não foi possivel enviar o video!.")
+    }
+
+    const conexaoConvertida = conexao.json();
+
+    return conexaoConvertida;
+}
+
+async function buscaProduto(termoDeBusca) {
+    const conexao = await fetch(`http://localhost:3000/produtos?q=${termoDeBusca}`);
+    const conexaoConvertida = await conexao.json();
+
+    return conexaoConvertida;
+}
+
+export const exportAPI = {
+    listaProdutos,
+    criaProduto,
+    buscaProduto
 }

@@ -1,8 +1,8 @@
-import { conexaoAPI } from "../main.js";
+import { exportAPI } from "./main.js";
 
 const inserirItens = document.querySelector("[data-lista]");
 
-fuction exibirNaTela('listaProdutos'){
+export default function exibirNaTela(listaProdutos){
     listaProdutos.forEach(produto => {
         inserirItens.innerHTML = `
                 <div class="produto-item">
@@ -13,5 +13,20 @@ fuction exibirNaTela('listaProdutos'){
                     <img class="icone-produto" src="${produto.icon}" alt="icone-lixeira">
                 </div>
         `
+return produto;
     })
 }
+
+async function listaProdutos() {
+    try 
+    {
+        const listaApi = await exportAPI.listaProdutos();
+        listaApi.forEach(elemento => inserirItens.appendChild(
+        exibirNaTela(elemento.imagem, elemento.titulo, elemento.video, elemento.descricao)))
+    } catch {
+       inserirItens.innerHTML = `<h2>Não foi possivel carregar a lista de videos.</h2>
+`
+    }
+}
+
+listaProdutos();
