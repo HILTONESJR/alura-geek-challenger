@@ -37,6 +37,6 @@ async function buscaProduto(termoDeBusca) {
 
 export const exportAPI = {
     listaProdutos,
-    criaVideo,
-    buscaVideo
+    criaProduto,
+    buscaProduto
 }
