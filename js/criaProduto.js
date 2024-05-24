@@ -1,15 +1,15 @@
-import { conectaApi } from "./conectaAPI.js";
+import { exportAPI } from "./conectaAPI.js";
 const formulario = document.querySelector("[data-formulario]");
 
-async function criarVideo(evento) {
+async function criarProduto(evento) {
     evento.preventDefault();
 
     const imagem = document.querySelector("[data-imagem]").value;
-    const url = document.querySelector("[data-url]").value;
     const titulo = document.querySelector("[data-titulo]").value;
-    const descricao = Math.floor(Math.random() * 10).toString();
+    const video = document.querySelector("[data-valor]").value;
+    const descricao = document.querySelector ("[data-descricao]").value;
 try {
-    await conectaApi.criaVideo(titulo, descricao, url, imagem);
+    await exportAPI.criaProduto(imagem, titulo, valor, descricao);
     window.location.href = "../pages/envio-concluido.html";
 } catch (e){
     alert(e);
@@ -17,4 +17,4 @@ try {
 }
 }
 
-formulario.addEventListener("submit", evento => criarVideo(evento))
+formulario.addEventListener("submit", evento => criarProduto(evento))
