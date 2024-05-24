@@ -1,4 +1,4 @@
-import { exportAPi } from "../main.js";
+import { exportAPI } from "../main.js";
 
 const inserirItens = document.querySelector("[data-lista]");
 
@@ -20,13 +20,13 @@ return produto;
 async function listaProdutos() {
     try 
     {
-        const listaApi = await exportAPI.listaVideos();
-        listaApi.forEach(elemento => lista.appendChild(
-        constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)))
+        const listaApi = await exportAPI.listaProdutos();
+        listaApi.forEach(elemento => inserirItens.appendChild(
+        exibirNaTela(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)))
     } catch {
-        lista.innerHTML = `<h2>Não foi possivel carregar a lista de videos.</h2>
+       inserirItens.innerHTML = `<h2>Não foi possivel carregar a lista de videos.</h2>
 `
     }
 }
 
-listaVideos();
+listaProdutos();
