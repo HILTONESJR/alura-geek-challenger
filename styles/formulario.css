@@ -6,6 +6,31 @@
     margin: 3em auto;
     width: 30vw;
 }
+.login_principal, .principal__formulario {
+    display: none;
+}
+.ative {
+    display: block;
+}
+
+.formulario__botao-logar, .botao-cadastro, .botao-login, .formulario__botao-cadastro {
+    background: rgb(199, 16, 153);
+    margin: 2em auto;
+    display: block;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--branco);
+}
+.formulario-botao-caslog {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
 
 .breadcrumb li {
     display: inline;
@@ -26,6 +51,14 @@
 .formulario__container {
     margin: 3em 0;
     text-align: center;
+}
+.formulario__botao troggle {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.formulario__botao-troggle span {
+    margin: 0 25px;
 }
 
 .formulario__campo {
@@ -63,8 +96,7 @@
     display: inline;
 }
 
-.formulario__botao,
-.camera__botao {
+.formulario__botao {
     background: var(--azul-claro);
     margin: 2em auto;
     display: block;
@@ -140,7 +172,3 @@
 }
 
 /* FORMULARIO LOGI */
-
-.login_principal {
-    display: none;
-}

@@ -35,6 +35,11 @@
             <section class="formulario">
                 <div class="formulario__container">
                     <h2 class="formulario__titulo-texto">Preencha os campos abaixo para criar sua conta.</h2>
+                    <div class="formulario-botao-caslog">
+                    <button class="botao-cadastro">CADASTRO</button>
+                    <button class="botao-login">LOGIN</button>
+                </div>
+
                 </div>
     
                 <form class="principal__formulario" data-formulario>
@@ -76,24 +81,24 @@
                     </fieldset>
     
                     <div>
-                        <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+                        <input value="Avançar" class="formulario__botao-cadastro" id="enviar" data-botao-enviar type="submit">
                         <span class="mensagem-erro"></span>
                     </div>
                 </form>
 
                 <form class="login_principal">
                     <fieldset class="formulario__campo">
-                        <label class="campo__etiqueta" for="email">E-mail</label>
-                        <input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
+                        <label class="campo__etiqueta" for="email-login">E-mail</label>
+                        <input name="email" id="email-login" class="campo__escrita" type="email" minlength="4" required />
                         <span class="mensagem-erro"></span>
                     </fieldset>
                     <fieldset class="formulario__campo">
                         <label class="campo__etiqueta" for="password">Senha</label>
-                        <input name="password" id="password" class="campo__escrita" type="password" minlength="4" required />
+                        <input name="password" id="password-login" class="campo__escrita" type="password" minlength="4" required />
                         <span class="mensagem-erro"></span>
                     </fieldset>
                     <div>
-                        <input value="Logar" class="formulario__botao" id="enviar" data-botao-logar type="submit">
+                        <input value="Logar" class="formulario__botao-logar" id="logar" data-botao-logar type="submit">
                         <span class="mensagem-erro"></span>
                     </div>
 
@@ -105,5 +110,6 @@
         </aside>    
     </main>
     <script type="module" src="../js/script.js"></script>
+    <script src="../js/form-cadastro.js"></script>
 </body>
 </html>
