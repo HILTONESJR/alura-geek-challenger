@@ -39,4 +39,8 @@ export const exportAPI = {
     listaProdutos,
     criaProduto,
     buscaProduto
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9be06dcf6b27e282931f9846c17fed28ac6453c2

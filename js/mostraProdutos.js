@@ -1,8 +1,16 @@
+<<<<<<< HEAD:js/mostraProdutos.js
 import { exportAPI } from "./main.js";
 
 const inserirItens = document.querySelector("[data-lista]");
 
 export default function exibirNaTela(listaProdutos){
+=======
+import { exportAPI } from "../main.js";
+
+const inserirItens = document.querySelector("[data-lista]");
+
+export default function exibirNaTela('listaProdutos'){
+>>>>>>> 9be06dcf6b27e282931f9846c17fed28ac6453c2:js/listar-itens.js
     listaProdutos.forEach(produto => {
         inserirItens.innerHTML = `
                 <div class="produto-item">
@@ -29,4 +37,8 @@ async function listaProdutos() {
     }
 }
 
+<<<<<<< HEAD:js/mostraProdutos.js
 listaProdutos();
+=======
+listaProdutos();
+>>>>>>> 9be06dcf6b27e282931f9846c17fed28ac6453c2:js/listar-itens.js

@@ -17,4 +17,8 @@ try {
 }
 }
 
+<<<<<<< HEAD
 formulario.addEventListener("submit", evento => criarProduto(evento))
+=======
+formulario.addEventListener("submit", evento => criarProduto(evento))
+>>>>>>> 9be06dcf6b27e282931f9846c17fed28ac6453c2
