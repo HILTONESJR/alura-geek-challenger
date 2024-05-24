@@ -138,3 +138,9 @@
         margin: 2em;
     }
 }
+
+/* FORMULARIO LOGI */
+
+.login_principal {
+    display: none;
+}

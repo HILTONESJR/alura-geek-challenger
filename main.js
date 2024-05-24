@@ -5,7 +5,7 @@ async function listaProdutos() {
     return conexaoConvertida;
 }
 
-async function criaProduto(imagem, titulo, video, descricao) {
+async function criaProduto(imagem, titulo, valor, descricao) {
     const conexao = await fetch("http://localhost:3000/produtos", {
         method: "POST",
         headers: {
@@ -17,30 +17,28 @@ async function criaProduto(imagem, titulo, video, descricao) {
             valor: valor,
             descricao: descricao
         })
-            
     });
+
     if (!conexao.ok) {
-        throw new Error("Não foi possivel enviar o video!.")
+        throw new Error("Não foi possível enviar o produto!");
     }
 
-    const conexaoConvertida = conexao.json();
-
+    const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
 
-async function buscaProduto(termoDeBusca) {
-    const conexao = await fetch(`http://localhost:3000/produtos?q=${termoDeBusca}`);
-    const conexaoConvertida = await conexao.json();
+async function deletaProduto(id) {
+    const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+        method: "DELETE"
+    });
 
-    return conexaoConvertida;
+    if (!conexao.ok) {
+        throw new Error("Não foi possível deletar o produto!");
+    }
 }
 
 export const exportAPI = {
     listaProdutos,
     criaProduto,
-    buscaProduto
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 9be06dcf6b27e282931f9846c17fed28ac6453c2
+    deletaProduto
+};

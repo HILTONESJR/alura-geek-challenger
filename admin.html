@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/form-itens.css">
+    <link rel="stylesheet" href="./styles/admin-items.css">
     <title>Alura Geek Challenger</title>
 </head>
 <header>
@@ -27,7 +28,7 @@
             <img src="./assets/img/dia-das-maes.png" alt="banner-flores">
         </div>
         <section class="loja-form-produtos">
-                <div class="itens-container-form" data-formulario>
+                <form class="itens-container-form" data-formulario>
                     <h1>INSERIR PRODUTOS</h1>
 
                     <div class="form-itens-box">
@@ -49,10 +50,10 @@
                         <label for="">Descrição:</label>
                         <input type="text" id="descricao-item" data-descricao>
                     </div>
-                    <div class="form-itens-box">
+                    <div class="form-itens-butao">
                     <input class="formulario__botao" type="submit" />
                     </div>
-                </div>
+                </form>
 
             <div class="lista-itens" data-lista>
                 <!--<div class="produto-item">
@@ -61,134 +62,14 @@
                     <p class="valor-produto">R$: 29,99 </p>
                     <span class="descricao-produto"> 3x de R$ 9,99</span>
                 </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-                <div class="produto-item">
-                    <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                    <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                    <p class="valor-produto">R$: 29,99 </p>
-                    <span class="descricao-produto"> 3x de R$ 9,99</span>
-                </div>
-            </div> -->
-            <section class="promocao-2-1">
-                <div class="promo-banner">
-                    <img src="./assets/img/promo-banner.jpg" alt="banner-2-por-1">
-                </div>
-                <div class="promo-item">
-                    <div class="promo-text">
-                        <h1>PROMOÇÃO LEVE DOIS PAGUE UM</h1>
-                    </div>
-                    <div class="promo-2-item">
-                        <div class="produto-item">
-                            <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                            <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                            <p class="valor-produto">R$: 159,99 </p>
-                            <span class="descricao-produto"> 3x de R$ 9,99</span>
-                        </div>
-                        <div class="produto-item">
-                            <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                            <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                            <p class="valor-produto">R$: 159,99 </p>
-                            <span class="descricao-produto"> 3x de R$ 9,99</span>
-                        </div>
-                        <div class="produto-item">
-                            <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                            <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                            <p class="valor-produto">R$: 159,99 </p>
-                            <span class="descricao-produto"> 3x de R$ 9,99</span>
-                        </div>
-
-                    </div>
-                </div>               
-            </section>
-    <aside class="banner-sessao2">
-        <img src="./assets/img/banner3.png" alt="banner-sessao-maes">
-    </aside>
-    <section class="promocao-2-2">
-        <div class="promo-2-2">
-            <div class="produto-item">
-                <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                <p class="valor-produto">R$: 159,99 </p>
-                <span class="descricao-produto"> 3x de R$ 9,99</span>
-            </div>
-            <div class="produto-item">
-                <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                <p class="valor-produto">R$: 159,99 </p>
-                <span class="descricao-produto"> 3x de R$ 9,99</span>
-            </div>
-            <div class="produto-item">
-                <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                <p class="valor-produto">R$: 159,99 </p>
-                <span class="descricao-produto"> 3x de R$ 9,99</span>
-            </div>
-            <div class="produto-item">
-                <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                <p class="valor-produto">R$: 159,99 </p>
-                <span class="descricao-produto"> 3x de R$ 9,99</span>
-            </div>
-            <div class="produto-item">
-                <img class="imagem-produto" src="./assets/img/buque-rosas.png" alt="">
-                <h1 class="titulo-produto">BUQUE DE ROSAS 12UN</h1>
-                <p class="valor-produto">R$: 159,99 </p>
-                <span class="descricao-produto"> 3x de R$ 9,99</span>
-            </div>
-        </div>
-    </section>
-
-
+                 -->
         </div>
     </section>
     </main>
+    <footer>
+        <h1>2024 @ Copyright HDev Developer.</h1>
+    </footer>
     <script type="module" src="./js/mostraProdutos.js"></script>
+    <script type="module" src="./js/criaProduto.js"></script>
 </body>
 </html>

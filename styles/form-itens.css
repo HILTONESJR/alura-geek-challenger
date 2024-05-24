@@ -5,13 +5,15 @@
 .loja-form-produtos {
     display: flex;
     flex-direction: row;
-    height: 600px;
+    margin: 0 20px;
+    gap: 20px;
 }
 .itens-container-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 600px;
     gap: 20px;
     border: 1px solid black;
     margin-top: 30px;
@@ -32,4 +34,7 @@ input {
     padding: 5px;
     border-radius: 30px;
     width: 350px;
+}
+.form-itens-box input {
+    align-items: center;
 }
