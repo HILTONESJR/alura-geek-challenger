@@ -22,7 +22,7 @@ async function listaProdutos() {
     {
         const listaApi = await exportAPI.listaProdutos();
         listaApi.forEach(elemento => inserirItens.appendChild(
-        exibirNaTela(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)))
+        exibirNaTela(elemento.imagem, elemento.titulo, elemento.video, elemento.descricao)))
     } catch {
        inserirItens.innerHTML = `<h2>Não foi possivel carregar a lista de videos.</h2>
 `
