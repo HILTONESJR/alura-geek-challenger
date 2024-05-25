@@ -1,12 +1,12 @@
 async function listaProdutos() {
-    const conexao = await fetch("http://localhost:3000/produtos");
+    const conexao = await fetch("https://HILTONESJR.github.io/floricultura/produtos.json");
     const conexaoConvertida = await conexao.json();
 
     return conexaoConvertida;
 }
 
 async function criaProduto(imagem, titulo, valor, descricao) {
-    const conexao = await fetch("http://localhost:3000/produtos", {
+    const conexao = await fetch("https://HILTONESJR.github.io/floricultura/produtos.json", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -28,7 +28,7 @@ async function criaProduto(imagem, titulo, valor, descricao) {
 }
 
 async function deletaProduto(id) {
-    const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
+    const conexao = await fetch(`https://HILTONESJR.github.io/floricultura/produtos.json/${id}`, {
         method: "DELETE"
     });
 
