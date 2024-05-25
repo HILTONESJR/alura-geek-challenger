@@ -6,7 +6,7 @@ async function listaProdutos() {
 }
 
 async function criaProduto(imagem, titulo, valor, descricao) {
-    const conexao = await fetch("http://localhost:3000/produtos", {
+    const conexao = await fetch("http://localhost:3000/produtos"), {
         method: "POST",
         headers: {
             "Content-type": "application/json"
