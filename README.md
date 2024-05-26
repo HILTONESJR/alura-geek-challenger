@@ -1,7 +1,18 @@
 <img src="images/banner/logo.svg"  align="center">
 
-[PROJETO FLORICUTURA LOJA]() <br>
+[PROJETO FLORICUTURA LOJA](https://hiltonesjr.github.io/alura-geek-challenger/) <br>
 
+<h1> Como executar o site </h1>
+Para execuar o programa de forma que funcione perfeitamente instale o *npm install -g json-server*  <br>
+apos a instalação para iniciar o servidor e conseguir ler os arquivos que estao no documento *db.json*<br>
+Execute o comando *json-server --watch db.json.* prontinho no final do carregamento o terminal te informara o https://localhost/5000/produtos;
+
+O projeto ja estara rodando em sua maquina para que voce verifique às funcionalidade.
+
+Obs: Para que voce consiga entrar na pagina de administrador conforme a função programada na tela de *Login*.<br>
+ultilize para acesso o Login: *admin@gmail.com.br* senha: *123456789*
+
+O login e senha sao ficticios inseridos para que usuarios nao tenham acesso as funcionalidades e admin do site add e remove produto.
 
 <h1> Ferramentas Usadas </h1>
 <ul>
@@ -30,8 +41,3 @@
 </ul>
 <HR>
 
-Para execuar o programa e funcione perfeitamente instale o *npm install -g json-server*  <br>
-apos a instalação para iniciar o servidor e conseguir ler os arquivos que estao no documento *db.json*<br>
-Execute o comando *json-server --watch db.json.* prontinho no final do carregamento o terminal te informara o https://localhost/5000/produtos;
-
-O projeto ja estara rodando em sua maquina para que voce verifique as funcionalidade.
