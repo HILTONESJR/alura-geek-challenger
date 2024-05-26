@@ -1,4 +1,4 @@
-<img src="images/banner/logo.svg"  align="center">
+<img src="assets/img/image 1.png"  align="center">
 
 [PROJETO FLORICUTURA LOJA](https://hiltonesjr.github.io/alura-geek-challenger/) <br>
 
